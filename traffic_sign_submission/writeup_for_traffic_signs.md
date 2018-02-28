@@ -1,8 +1,6 @@
 #**Traffic Sign Recognition** 
 
-##Writeup Template
 
-###You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -14,7 +12,7 @@ The goals / steps of this project are the following:
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
 * Analyze the softmax probabilities of the new images
-* Summarize the results with a written report
+
 
 
 [//]: # (Image References)
@@ -30,7 +28,7 @@ The goals / steps of this project are the following:
 
 
 
-0.In Step 0 I've loaded the data from the traffic_signs_data file, broken it into the three parts and examined the size and shape of the files. 
+0.In Step 0 I've loaded the data from the traffic_signs_data file, broken it into the three parts and examined the size and shape of the files. The three parts are training, validation, and testing.
 
 X_train.shape :  (34799, 32, 32, 3)
 X_test.shape :  (12630, 32, 32, 3)
@@ -44,7 +42,7 @@ Number of testing examples = 12630
 Image data shape = (32, 32, 3)
 Number of classes = 43
 
-![alt text][image1]
+![alt text][image1] (Markdown does not like my images. See histogram entitled "Distribution of 43 sign types" in code.)
 
 2.I've explored using several python tools to display the data. Matplotlib's subplot works best, subplot2grid's arguments are odd. I've also broken out the 43 individual labels with an example of each.
 
@@ -69,7 +67,8 @@ Green
 Red
 ![alt text][image6]
 
-####2. LeNet was used in a prior lesson so I started with it here. Later I converted it to Sermanet-LeNet after reading one of the recommended papers. I was interested in two parts of the paper. One was splitting the data into two parts; one following the entire path and the second skipping several steps and remerging. The other part was a comment in the paper claiming that Sermant-LeNet was, in part, reverse engineered from cat and monkey visual cortexes. How cool is that? This is in cell 6 of the code.
+####2. LeNet was used in a prior lesson so I started with it here. Later I converted it to Sermanet-LeNet after reading one of the recommended papers. I was interested in two parts of the paper. One was splitting the data into two parts; one following the entire path and the second skipping several steps and remerging. The other part was a comment in the paper claiming that Sermant-LeNet was, in part, reverse engineered from cat and monkey visual cortexes. How cool is that? This is in cell 6 of the code. (paper url: http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf) (other useful paper:http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf) The layers described for Sermanet-LeNet are illustrated in the seceond paper.
+
 
 Layers of Sermanet-LeNet
 
