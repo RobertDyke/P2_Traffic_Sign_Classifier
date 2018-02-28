@@ -1,6 +1,0 @@
-In Step 0 I've loaded the data from the traffic_signs_data file, broken it into the three parts and examined the size and shape of the files.
-X_train.shape :  (34799, 32, 32, 3)
-X_test.shape :  (12630, 32, 32, 3)
-y_test.shape :  (12630,)
-X_valid.shape :  (4410, 32, 32, 3)
-
